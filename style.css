@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+#splash {
+    position: relative;
+    background-image: url(bysplash.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 177vw;
+    background-position: 60%;
+}
