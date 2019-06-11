@@ -10,6 +10,15 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('quicksand/quicksand-regular-webfont.woff2') format('woff2'),
+        url('quicksand/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 p {
     margin: 0;
 }
@@ -33,7 +42,32 @@ img {
     width: 100vw;
     display: flex;
     justify-content: center;
+}
 
+.sidenavclass .luknav {
+    position: absolute;
+    color: #818181;
+    display: block;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+    padding: 8px 8px 8px 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidenavclass.show {
+    width: 250px;
+}
+
+.menuknap {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.show {
+    visibility: visible;
 }
 
 .title {
@@ -60,10 +94,26 @@ img {
     }
 }
 
+/* CV */
+
+#cv {
+    background-color: lightgreen
+}
+
+#cv h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#cv h3 {
+    font-family: 'quicksandregular';
+}
+
 #box {
     background-color: rgb(255, 210, 0);
     padding: 15px 10px 20px;
     position: relative;
+    font-family: 'quicksandregular';
 }
 
 #box.lille {
@@ -96,6 +146,10 @@ img {
     position: absolute;
 }
 
+#mereommmig {
+    font-family: 'quicksandregular';
+}
+
 #box.lille span::after {
     content: "+";
 }
@@ -109,3 +163,11 @@ img {
     background: linear-gradient(rgba(255, 210, 0, 0), (rgbb255, 210, 0;
     )
 }
+
+/* WEB */
+
+/* ANIMATION */
+
+/* CONTENT */
+
+/* UX */
