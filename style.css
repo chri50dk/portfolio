@@ -166,6 +166,24 @@ img {
 
 /* WEB */
 
+#web {
+    background-color: lightgreen
+}
+
+#web p {
+    font-family: 'quicksandregular';
+}
+
+#web h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'quicksandregular';
+}
+
+#web h3 {
+    font-family: 'quicksandregular';
+}
+
 /* ANIMATION */
 
 /* CONTENT */
