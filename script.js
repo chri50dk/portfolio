@@ -2,6 +2,12 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("siden vises");
+    if (document.querySelector(".menuknap")) {
+        document.querySelector(".menuknap").addEventListener("click", openNav);
+    }
+    if (document.querySelector(".luknav")) {
+        document.querySelector(".luknav").addEventListener("click", closeNav);
+    }
     document.querySelector("#mere").addEventListener("click", readMore);
     document.querySelector(".menuknap").addEventListener("click", openNav);
     document.querySelector(".luknav").addEventListener("click", closeNav);
@@ -17,11 +23,17 @@ function readMore() {
 
 function openNav() {
     console.log("open nav");
-    document.querySelector("#sidenavid").classList.add("show");
+    document.querySelector("#sidenavid").classList.remove("hidden");
+
+    document.querySelector(".menuknap").classList.add("hidden");
+    document.querySelector(".menuknap").removeEventListener("click", openNav);
 }
 
 function closeNav() {
     console.log("close nav");
-    document.querySelector("#sidenavid").classList.remove("show");
+    document.querySelector(".menuknap").classList.remove("hidden");
+    document.querySelector("#sidenavid").classList.add("hidden");
+
+    document.querySelector(".menuknap").addEventListener("click", openNav);
 
 }
