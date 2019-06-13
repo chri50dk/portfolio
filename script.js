@@ -11,7 +11,6 @@ function sidenVises() {
     if (document.querySelector("#mere")) {
         document.querySelector("#mere").addEventListener("click", readMore);
     }
-    document.querySelector("#mere").addEventListener("click", readMore);
     document.querySelector(".menuknap").addEventListener("click", openNav);
     document.querySelector(".luknav").addEventListener("click", closeNav);
 
