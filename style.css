@@ -113,6 +113,7 @@ img {
     color: white;
     font-size: 3rem;
     font-family: 'quicksandregular';
+    position: fixed;
 }
 
 .luknav {
@@ -149,6 +150,7 @@ img {
 
     .menuknap {
         visibility: hidden;
+        position: fixed;
     }
 
     .luknav {
@@ -200,6 +202,13 @@ img {
         grid-gap: 15px;
     }
 
+    .cvmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+
 }
 
 #splash {
@@ -218,6 +227,10 @@ img {
 }
 
 #cv p {}
+
+.endnumereommig {
+    font-family: 'quicksandregular';
+}
 
 #cv h1 {
     font-size: 5rem;
