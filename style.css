@@ -97,6 +97,7 @@ img {
     background-color: black;
     z-index: 100;
     justify-content: space-between;
+    position: fixed;
 }
 
 .sidenavclass.hidden {
@@ -171,6 +172,7 @@ img {
         justify-content: space-around;
         background-color: transparent;
         width: 100%;
+        position: fixed;
     }
 
     .sidenavclass a {
@@ -208,6 +210,18 @@ img {
         grid-gap: 15px;
     }
 
+    .teorigruppespil {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .contentmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
 
 }
 
@@ -225,6 +239,18 @@ img {
     justify-content: center;
     overflow-x: hidden;
 }
+
+.cvpic {
+    width: 200px;
+    display: flex;
+
+
+}
+
+.cvpic img {
+    border-radius: 30%;
+}
+
 
 #cv p {}
 
