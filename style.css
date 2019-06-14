@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
 }
 
+figure {
+    margin: 0;
+}
+
 @font-face {
     font-family: 'campus_personal_useregular';
     src: url('campus_personal_use-webfont.woff2') format('woff2'),
@@ -92,6 +96,7 @@ img {
     transform-origin: top left;
     background-color: black;
     z-index: 100;
+    justify-content: space-between;
 }
 
 .sidenavclass.hidden {
@@ -170,12 +175,31 @@ img {
         padding: 5px;
         overflow: hidden;
     }
+
+    #farvefejl {}
+
+    #farvefejl figure {
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .title {
         font-size: 6rem;
     }
+
+    #farvefejl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .teorijs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
 }
 
 #splash {
@@ -188,7 +212,6 @@ img {
     position: relative;
     /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
     background-color: #CE4246;
-    background-size: cover;
     width: 100vw;
     justify-content: center;
     overflow-x: hidden;
@@ -269,11 +292,8 @@ img {
     position: relative;
     /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
     background-color: #9EDB41;
-    background-size: cover;
-    height: 100vh;
     width: 100vw;
     justify-content: center;
-    overflow: hidden;
 }
 
 #web p {
@@ -300,17 +320,19 @@ img {
     font-family: 'quicksandregular';
 }
 
+#farvefejl {
+    margin: 0;
+    padding: 15px;
+}
+
 /* ANIMATION */
 
 #animation {
     position: relative;
     /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
     background-color: #F29F05;
-    background-size: cover;
-    height: 100vh;
     width: 100vw;
     justify-content: center;
-    overflow: hidden;
 }
 
 #animation p {
@@ -318,7 +340,7 @@ img {
 }
 
 #animation h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -343,11 +365,8 @@ img {
     position: relative;
     /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
     background-color: #C4BCB6;
-    background-size: cover;
-    height: 100vh;
     width: 100vw;
     justify-content: center;
-    overflow: hidden;
 }
 
 #content p {
@@ -380,11 +399,8 @@ img {
     position: relative;
     /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
     background-color: #62C0F5;
-    background-size: cover;
-    height: 100vh;
     width: 100vw;
     justify-content: center;
-    overflow: hidden;
 }
 
 #ux p {
