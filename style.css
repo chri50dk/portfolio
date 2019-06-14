@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'campus_personal_useregular';
     src: url('campus_personal_use-webfont.woff2') format('woff2'),
@@ -16,6 +20,14 @@ body {
         url('quicksand/quicksand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('quicksand-bold-webfont.woff2') format('woff2'),
+        url('quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -26,6 +38,10 @@ p {
 h1 {
     margin: 0;
     font-family: 'campus_personal_useregular';
+}
+
+h2 {
+    font-family: 'quicksandregular'
 }
 
 img {
@@ -66,12 +82,16 @@ img {
     font-family: 'quicksandregular'
 }
 
+.sidenavclass a.active {
+    color: dimgray;
+}
+
 .sidenavclass {
     position: absolute;
     transition: 0.5s;
     transform-origin: top left;
     background-color: black;
-
+    z-index: 100;
 }
 
 .sidenavclass.hidden {
@@ -141,10 +161,9 @@ img {
 
     .sidenavclass {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: transparent;
         width: 100%;
-
     }
 
     .sidenavclass a {
@@ -166,8 +185,16 @@ img {
 /* CV */
 
 #cv {
-    background-color: lightgreen
+    position: relative;
+    /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
+    background-color: #CE4246;
+    background-size: cover;
+    width: 100vw;
+    justify-content: center;
+    overflow-x: hidden;
 }
+
+#cv p {}
 
 #cv h1 {
     font-size: 5rem;
@@ -180,7 +207,7 @@ img {
 
 #box {
     background-color: rgb(255, 210, 0);
-    padding: 15px 10px 20px;
+    padding: 15px 10px 30px 20px;
     position: relative;
     font-family: 'quicksandregular';
 }
@@ -191,7 +218,7 @@ img {
 }
 
 #box.stor {
-    max-height: 1000px
+    max-height: 3000px
 }
 
 #mere {
@@ -202,6 +229,8 @@ img {
     background: linear-gradient(rgba(255, 210, 0, 0), rgb(255, 210, 0));
     width: 100%;
     height: 60px;
+
+
 }
 
 #mere .plus {
@@ -213,6 +242,7 @@ img {
     display: inline-block;
     margin-top: 40px;
     position: absolute;
+    cursor: pointer;
 }
 
 #mereommmig {
@@ -230,13 +260,20 @@ img {
 .gult_overlay {
     height: 60px;
     background: linear-gradient(rgba(255, 210, 0, 0), (rgbb255, 210, 0;
-    )
+    ))
 }
 
 /* WEB */
 
 #web {
-    background-color: lightgreen
+    position: relative;
+    /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
+    background-color: #9EDB41;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #web p {
@@ -246,7 +283,17 @@ img {
 #web h1 {
     font-size: 5rem;
     text-align: center;
-    font-family: 'quicksandregular';
+}
+
+.linkweb a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkweb {
+    border-style: solid;
+    width: 65px;
+    text-align: center;
 }
 
 #web h3 {
@@ -256,7 +303,14 @@ img {
 /* ANIMATION */
 
 #animation {
-    background-color: lightgreen
+    position: relative;
+    /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
+    background-color: #F29F05;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #animation p {
@@ -266,7 +320,17 @@ img {
 #animation h1 {
     font-size: 5rem;
     text-align: center;
-    font-family: 'quicksandregular';
+}
+
+.linkani a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkani {
+    border-style: solid;
+    width: 105px;
+    text-align: center;
 }
 
 #animation h3 {
@@ -276,7 +340,14 @@ img {
 /* CONTENT */
 
 #content {
-    background-color: lightgreen
+    position: relative;
+    /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
+    background-color: #C4BCB6;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #content p {
@@ -286,17 +357,34 @@ img {
 #content h1 {
     font-size: 5rem;
     text-align: center;
-    font-family: 'quicksandregular';
 }
 
-#web h3 {
+.linkcontent a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkcontent {
+    border-style: solid;
+    width: 125px;
+    text-align: center;
+}
+
+#content h3 {
     font-family: 'quicksandregular';
 }
 
 /* UX */
 
 #ux {
-    background-color: lightgreen
+    position: relative;
+    /* background: linear-gradient(to bottom, #c9de96 0%, #8ab66b 44%, #398235 100%);*/
+    background-color: #62C0F5;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #ux p {
@@ -306,7 +394,17 @@ img {
 #ux h1 {
     font-size: 5rem;
     text-align: center;
-    font-family: 'quicksandregular';
+}
+
+.linkux a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkux {
+    border-style: solid;
+    width: 65px;
+    text-align: center;
 }
 
 #ux h3 {
