@@ -67,10 +67,17 @@ img {
 }
 
 .sidenavclass {
+    position: absolute;
     transition: 0.5s;
     transform-origin: top left;
-    overflow-x: hidden;
+    background-color: black;
+
 }
+
+.sidenavclass.hidden {
+    transform: translateX(-100%);
+}
+
 
 .sidenavclass a:hover {
     color: dimgrey;
@@ -98,9 +105,8 @@ img {
     display: block;
 }
 */
-
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .title {
@@ -121,16 +127,23 @@ img {
     }
 
     .luknav {
-        visibility: hidden;
+        display: none;
+
     }
 
     .hidden {
-        display: block;
+        visibility: visible;
+    }
+
+    .sidenavclass.hidden {
+        transform: translateX(0);
     }
 
     .sidenavclass {
         display: flex;
         justify-content: space-between;
+        background-color: transparent;
+        width: 100%;
 
     }
 
@@ -242,6 +255,60 @@ img {
 
 /* ANIMATION */
 
+#animation {
+    background-color: lightgreen
+}
+
+#animation p {
+    font-family: 'quicksandregular';
+}
+
+#animation h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'quicksandregular';
+}
+
+#animation h3 {
+    font-family: 'quicksandregular';
+}
+
 /* CONTENT */
 
+#content {
+    background-color: lightgreen
+}
+
+#content p {
+    font-family: 'quicksandregular';
+}
+
+#content h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'quicksandregular';
+}
+
+#web h3 {
+    font-family: 'quicksandregular';
+}
+
 /* UX */
+
+#ux {
+    background-color: lightgreen
+}
+
+#ux p {
+    font-family: 'quicksandregular';
+}
+
+#ux h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'quicksandregular';
+}
+
+#ux h3 {
+    font-family: 'quicksandregular';
+}
