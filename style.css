@@ -240,14 +240,15 @@ img {
     overflow-x: hidden;
 }
 
-.cvpic {
-    width: 200px;
+.toppics {
+    width: 100%;
     display: flex;
-
+    justify-content: center;
+    padding: 10px;
 
 }
 
-.cvpic img {
+.toppics img {
     border-radius: 30%;
 }
 
@@ -392,6 +393,17 @@ img {
     border-style: solid;
     width: 105px;
     text-align: center;
+}
+
+.linkani2 {
+    border-style: solid;
+    width: 105px;
+    text-align: center;
+}
+
+.linkani2 a {
+    text-decoration: none;
+    color: black;
 }
 
 #animation h3 {
