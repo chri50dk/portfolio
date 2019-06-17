@@ -222,6 +222,19 @@ img {
         grid-gap: 15px;
     }
 
+    .designsprint {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .egetdesignsprint {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+
 
 }
 
@@ -461,6 +474,10 @@ img {
 #ux h1 {
     font-size: 5rem;
     text-align: center;
+}
+
+#ux .groopsimg {
+    width: 50%;
 }
 
 .linkux a {
