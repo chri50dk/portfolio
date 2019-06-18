@@ -6,6 +6,18 @@ body {
     box-sizing: border-box;
 }
 
+footer {
+    width: 100%;
+    font-family: 'quicksandregular';
+    background-color: black;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 0.7rem;
+}
+
 figure {
     margin: 0;
 }
