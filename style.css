@@ -10,6 +10,10 @@ figure {
     margin: 0;
 }
 
+a {
+    font-family: 'quicksandregular';
+}
+
 @font-face {
     font-family: 'campus_personal_useregular';
     src: url('campus_personal_use-webfont.woff2') format('woff2'),
@@ -360,13 +364,15 @@ img {
 
 .linkweb a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .linkweb {
     border-style: solid;
-    width: 65px;
+    width: 85px;
     text-align: center;
+    background-color: black;
+
 }
 
 #web h3 {
@@ -399,24 +405,27 @@ img {
 
 .linkani a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .linkani {
     border-style: solid;
-    width: 105px;
+    width: 125px;
     text-align: center;
+    background-color: black;
 }
 
 .linkani2 {
     border-style: solid;
-    width: 105px;
+    width: 125px;
     text-align: center;
+    background-color: black;
+    margin-top: 5px;
 }
 
 .linkani2 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #animation h3 {
@@ -444,13 +453,14 @@ img {
 
 .linkcontent a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .linkcontent {
     border-style: solid;
-    width: 125px;
+    width: 155px;
     text-align: center;
+    background-color: black;
 }
 
 #content h3 {
@@ -482,13 +492,14 @@ img {
 
 .linkux a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .linkux {
     border-style: solid;
     width: 65px;
     text-align: center;
+    background-color: black;
 }
 
 #ux h3 {
